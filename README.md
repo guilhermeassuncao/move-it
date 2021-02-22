@@ -1,20 +1,20 @@
-# Proffy
+# Move It
 
 <br>
 
 <div align="center">
-  <img src="figma/Home.png" alt="Proffy">
+  <img src="figma/Home.png" alt="Move It">
 </div>
 
 <br>
 
 ## :bookmark_tabs: Sobre
 
-Projeto desenvolvido na Next Level Week 3
+Projeto desenvolvido na Next Level Week 4
 
 Intituição - Rocketseat
 
-Professor - Mayk Brito
+Professor - Diego Fernandes
 
 <br>
 
@@ -23,10 +23,9 @@ Professor - Mayk Brito
 - HTML5
 - CSS3
 - JavaScript
-- Node.js
-- Express
-- Handlebars
-- SQLite
+- TypeScript
+- ReactJS
+- NextJs
 
 
 <br>
