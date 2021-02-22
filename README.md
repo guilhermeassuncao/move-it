@@ -25,7 +25,7 @@ Professor - Diego Fernandes
 - JavaScript
 - TypeScript
 - ReactJS
-- NextJs
+- NextJS
 
 
 <br>
