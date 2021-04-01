@@ -1,7 +1,5 @@
 {
-  "name": "moveit-nlw4-reactjs",
-  "version": "0.1.0",
-  "private": true,
+  "name": "moveit",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
