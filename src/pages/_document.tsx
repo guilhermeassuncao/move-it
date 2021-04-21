@@ -17,7 +17,6 @@ export default class MyDocument extends Document {
                         <meta property="og:title" content="Move It | Movimente-se"/>
                         <meta property="og:description" content="Move it é uma aplicação que usa a técnica de pomodoro e contém uns desafios incriveis para fazer na sua pausa de 25 minutos."/>
                         <meta property="og:url" content="https://moveit-guilhermeassuncao.vercel.app/"/>
-                        <meta property="og:image" content="https://moveit-guilhermeassuncao.vercel.app/public/og-image.png"/>
                 </Head>
                 <body>
                     <Main/>
