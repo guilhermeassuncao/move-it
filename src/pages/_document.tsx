@@ -12,6 +12,12 @@ export default class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@600&display=swap"
                         rel="stylesheet"
                     />
+                    
+                        <meta property="og:type" content="website"/>
+                        <meta property="og:title" content="Move It | Movimente-se"/>
+                        <meta property="og:description" content="Move it é uma aplicação que usa a técnica de pomodoro e contém uns desafios incriveis para fazer na sua pausa de 25 minutos."/>
+                        <meta property="og:url" content="https://moveit-guilhermeassuncao.vercel.app/"/>
+                        <meta property="og:image" content="https://moveit-guilhermeassuncao.vercel.app/public/og-image.png"/>
                 </Head>
                 <body>
                     <Main/>
