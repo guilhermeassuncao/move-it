@@ -5,19 +5,18 @@ import styles from "../styles/components/ChallengeBox.module.css";
 import { CompletedChallenges } from "./CompletedChallenges";
 
 export function ChallengeBox() {
-    const {activeChallenge, resetChallenge, completeChallenge} = useContext(ChallengesContext);
-    const {resetCountdown} = useContext(CountdownContext)
+    const { activeChallenge, resetChallenge, completeChallenge } = useContext(ChallengesContext);
+    const { resetCountdown } = useContext(CountdownContext);
 
-    function handleChallengeSucceeded(){
+    function handleChallengeSucceeded() {
         completeChallenge();
         resetCountdown();
     }
 
-    function handleChallengeFailed(){
+    function handleChallengeFailed() {
         resetChallenge();
         resetCountdown();
     }
-
 
     return (
         <div className={styles.challengeBoxContainer}>
@@ -25,24 +24,16 @@ export function ChallengeBox() {
                 <div className={styles.challengeActive}>
                     <header>Ganhe {activeChallenge.amount} xp</header>
                     <main>
-                        <img src={`icons/${activeChallenge.type}.svg`} alt="Body"/>
+                        <img src={`icons/${activeChallenge.type}.svg`} alt="Body" />
                         <strong>Exercite-se</strong>
                         <p>{activeChallenge.description}</p>
                     </main>
                     <footer>
-                        <button
-                            type="button"
-                            className={styles.challengeFailedButton}
-                            onClick={handleChallengeFailed}
-                        >
+                        <button type="button" className={styles.challengeFailedButton} onClick={handleChallengeFailed}>
                             Falhei
                         </button>
-                        <button
-                            type="button"
-                            className={styles.challengeSucceededButton}
-                            onClick={handleChallengeSucceeded}
-                        >
-                             Completei   
+                        <button type="button" className={styles.challengeSucceededButton} onClick={handleChallengeSucceeded}>
+                            Completei
                         </button>
                     </footer>
                 </div>

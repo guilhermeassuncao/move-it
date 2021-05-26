@@ -1,5 +1,5 @@
 import { createContext, useState, ReactNode, useEffect } from "react";
-import Cookies from 'js-cookie';
+import Cookies from "js-cookie";
 import challenges from "../challenges.json";
 import { LevelUpModal } from "../components/LevelUpModal";
 
@@ -23,9 +23,9 @@ interface ChallengeContextData {
 
 interface ChallengesProviderProps {
     children: ReactNode;
-    level:number;
-    currentExperience:number;
-    challengesCompleted:number;
+    level: number;
+    currentExperience: number;
+    challengesCompleted: number;
 }
 
 export const ChallengesContext = createContext({} as ChallengeContextData);
@@ -42,20 +42,20 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
 
     useEffect(() => {
         Notification.requestPermission();
-    }, [])
+    }, []);
 
     useEffect(() => {
-        Cookies.set('level', String(level))
-        Cookies.set('currentExperience', String(currentExperience))
-        Cookies.set('challengesCompleted', String(challengesCompleted))
-    }, [level, currentExperience, challengesCompleted])
+        Cookies.set("level", String(level));
+        Cookies.set("currentExperience", String(currentExperience));
+        Cookies.set("challengesCompleted", String(challengesCompleted));
+    }, [level, currentExperience, challengesCompleted]);
 
     function levelUp() {
         setLevel(level + 1);
-        setIslevelUpModalOpen(true)
+        setIslevelUpModalOpen(true);
     }
 
-    function closeLevelUpModal () {
+    function closeLevelUpModal() {
         setIslevelUpModalOpen(false);
     }
 
@@ -65,12 +65,12 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
 
         setActiveChallenge(challenge);
 
-        new Audio('/notification.mp3').play()
+        new Audio("/notification.mp3").play();
 
-        if (Notification.permission === 'granted') {
-            new Notification('Novo Desafio', {
-                body: `Valendo ${challenge.amount}xp!`
-            })
+        if (Notification.permission === "granted") {
+            new Notification("Novo Desafio", {
+                body: `Valendo ${challenge.amount}xp!`,
+            });
         }
     }
 
@@ -113,7 +113,7 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
             }}
         >
             {children}
-            {islevelUpModalOpen && <LevelUpModal/>}
+            {islevelUpModalOpen && <LevelUpModal />}
         </ChallengesContext.Provider>
     );
 }
