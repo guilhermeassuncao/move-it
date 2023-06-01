@@ -20,17 +20,16 @@ Professor - Diego Fernandes
 
 ## :rocket: Tecnologias
 
-- HTML5
-- CSS3
-- JavaScript
-- TypeScript
-- ReactJS
-- NextJS
-
+-   HTML5
+-   CSS3
+-   JavaScript
+-   TypeScript
+-   ReactJS
+-   NextJS
 
 <br>
 
-## :green_book: Licença 
+## :green_book: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
